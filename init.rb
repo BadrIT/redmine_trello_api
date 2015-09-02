@@ -1,4 +1,4 @@
-Redmine::Plugin.register :redmine_trello do
+Redmine::Plugin.register :redmine_trello_api do
   name 'Redmine Trello plugin'
   author 'BadrIT'
   description 'API plugin for Trello-For-Redmine plugin'
