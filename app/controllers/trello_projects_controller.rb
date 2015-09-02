@@ -8,12 +8,12 @@ class TrelloProjectsController < ApplicationController
   	# load project 
   	project = User.current.projects.find(params[:project_id])
 
-  	unless Setting.plugin_redmine_trello['trello_url'].present?
+  	unless Setting.plugin_redmine_trello_api['trello_url'].present?
   		flash[:error] = l(:trello_url_host_undefined)
   		redirect_to project_path(project)
   	else
   		# auth user
-  		redirect_to "#{Setting.plugin_redmine_trello['trello_url']}/redmine/authenticate/#{project.id}/#{user_api_key}"
+  		redirect_to "#{Setting.plugin_redmine_trello_api['trello_url']}/redmine/authenticate/#{project.id}/#{user_api_key}"
   	end
   end
 end
