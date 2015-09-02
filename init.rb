@@ -10,5 +10,5 @@ Redmine::Plugin.register :redmine_trello do
   menu :project_menu, :trello_projects, { :controller => 'trello_projects', :action => 'index' }, :caption => 'Trello', :after => :activity, :param => :project_id,
    :html => { :target => '_blank' }
 
-  settings :default => {'empty' => true}, :partial => 'settings/remine_trello'
+  settings :default => {'empty' => true}, :partial => 'settings/redmine_trello_api'
 end
