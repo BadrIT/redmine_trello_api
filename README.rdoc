@@ -1,4 +1,4 @@
-= Redmine Trello
+= Redmine Trello API
 
 Creating a trello like interface for redmine.
 
@@ -10,6 +10,6 @@ More details can be found at in the doc directory or on the official website htt
   1. Install Trello https://github.com/BadrIT/trello-for-redmine
   2. Install Redmine if not already installed http://www.redmine.org/projects/redmine/wiki/RedmineInstall
   3. cd to `plugins`
-  4. Clone the scrummer plugin `git clone https://github.com/BadrIT/redmine_trello.git`
+  4. Clone the scrummer plugin `git clone https://github.com/BadrIT/redmine_trello_api.git`
   5. cd ..
-  6. Go to  `redmine_url_host/settings/plugin/redmine_trello` and set trello url host
+  6. Go to  `redmine_url_host/settings/plugin/redmine_trello_api` and set trello url host
