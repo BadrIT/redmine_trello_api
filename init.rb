@@ -3,7 +3,7 @@ Redmine::Plugin.register :redmine_trello do
   author 'BadrIT'
   description 'Creating a trello like interface for redmine'
   version '0.0.1'
-  url 'http://example.com/path/to/plugin'
+  url 'https://github.com/BadrIT/redmine_trello_api'
   author_url 'http://www.badrit.com'
 
   permission :trello_projects, { :trello_projects => [:index] }, :public => true
