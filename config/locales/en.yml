@@ -1,0 +1,3 @@
+# English strings go here for Rails i18n
+en:
+  trello_url_host_undefined: "Trello Host URL undefined"
