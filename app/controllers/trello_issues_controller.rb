@@ -1,6 +1,8 @@
 class TrelloIssuesController < ApplicationController
 	unloadable
-    
+  
+  accept_api_auth :show
+
   include TrelloIssuesHelper
 
 	def show
