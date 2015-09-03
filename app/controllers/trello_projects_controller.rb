@@ -6,7 +6,7 @@ class TrelloProjectsController < ApplicationController
   	user_api_key = User.current.api_key
 
   	# load project 
-  	project = User.current.projects.find(params[:project_id])
+  	project = User.current.projects.find_by_identifier(params[:project_id])
 
   	unless Setting.plugin_redmine_trello_api['trello_url'].present?
   		flash[:error] = l(:trello_url_host_undefined)
